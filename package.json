@@ -1,0 +1,27 @@
+{
+  "name": "jsontovtt",
+  "version": "1.0.0",
+  "description": "Convert JSON to VTT",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "test": "set NODE_ENV=production& electron ./app",
+    "start": "electron ./app",
+    "build": "build --win",
+    "ship": "build --win -p always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fifthturtle/jsontovtt.git"
+  },
+  "author": "Josh DeFamio <josh@fifthturtle.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fifthturtle/jsontovtt/issues"
+  },
+  "homepage": "https://github.com/fifthturtle/jsontovtt#readme",
+  "devDependencies": {
+    "electron": "^5.0.3",
+    "electron-builder": "^20.43.0"
+  }
+}
